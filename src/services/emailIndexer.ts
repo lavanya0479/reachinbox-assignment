@@ -171,8 +171,7 @@ import { WebClient } from "@slack/web-api";
 // 🧠 Elasticsearch Client Setup
 // ============================
 const bonsaiUrl =
-  process.env.ELASTIC_URL ||
-  "https://9ea1a2bc4d:c7046f233a43b967fd4a@effervescent-ebony-1hxppx2z.us-east-1.bonsaisearch.net";
+  process.env.ELASTIC_URL;
 
 export const esClient = new Client({
   node: bonsaiUrl, // Bonsai URL contains credentials
